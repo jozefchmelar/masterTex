@@ -1,0 +1,11 @@
+\chapter*{Conclusion}
+\addcontentsline{toc}{chapter}{Conclusion}
+In the thesis, I analyzed blockchain as a technology which originated in Bitcoin as public blockchain in the cryptocurrency world. The analysis helped to understand how public blockchains work in order to achieve consensus in decentralized systems. Best solutions for private blockchain network are covered by Hyperledger umbrella project. After experiments with Hyperledger Fabric, I concluded that it's very hard to create and maintain a working solution. Hyperledger Composer turned out to be a great tool for businesses because it saves time, therefore it saves money.  
+
+The goal was to develop a blockchain application for storing manufacturing data which was achieved. Data is stored in a multi-organization Hyperledger Fabric business network. Storing manufacturing data to MongoDB is enriched with a blockchain without any need for another developer to modify their code in existing projects. Since this project is still in testing phase, both MongoDB and blockchain are in use, storing the same data. 
+
+Problem with this solution is unnecessary complexity when it comes to setting up and maintenance. It might be difficult to persuade another business to pay for and implement this solution in their network. To avoid this complex solution I would recommend to reconsider the usage of blockchain. If the produced data were signed with a digital signature we could easily identify if the data has been changed in case someone has a suspicion of integrity. 
+
+The current implementation is using Ubuntu in a virtual machine with Docker. The current version of Fabric is not very windows friendly, but with upcoming updates which may fix the issues, I encountered while using windows might be resolved. This way the future of this project will be easier deployment on windows machines. This would allow deploying peer nodes to the existing computers faster. Scripts that I wrote to simplify deployment could be used as a foundation for a configuration software which would automatically deploy peers through a network. 
+
+Blockchain is an interesting technology providing tamper-resistant database. Mainstream adoption is questionable because current systems are complicated enough without a blockchain and it could create more problems than it solves.

@@ -1,0 +1,19 @@
+\section{Blockchain usage in manufacturing process}
+One of the most mentioned use case for blockchain is supply chain management. It provides enhanced transparency and manufacturers can also reduce recalls by sharing logs. One of the most appealing benefits of using blockchain for data is that it allows the data to be more interoperable. Due to this, it becomes easier for companies to share information and data with manufacturers, suppliers, and vendors. Transparency in Blockchain helps reduce delays and disputes while preventing goods from getting stuck in the supply chain. As each product can be tracked in real-time, the chances of misplacements are rare. Ranging from parts suppliers, manufacturers to sellers, the automotive supply chain is a highly complex and broad sector with multiple participants. Delivering real customer value requires analysis of existing IT and business processes along with solutions that abide by the permissions of security, confidentiality, and authorization. For automotive suppliers, blockchain can be used to protect their brands from duplicate products and to create customer-centric business models. \cite{supply_chain}
+
+\subsection{Current state}
+If a big car company is not able to produce the desired product, they'll use their chain of suppliers. Supplier is required to produce a consistent and reliable product that fits requirements and is held responsible for every part he produces. 
+
+As an example, we'll use a manufacturing of a headlight. Car company ``CarCom'' requires headlight from ``LightCom''. ``CarCom'' requires headlights with tightened screws with torque 1.5 Nm, low beam and high beam of the light has to be consistent and pass tests. Every piece has to be marked with a unique code. ``LightCom'' will have to create or buy a machine that measures and stores all this data in a database.
+
+When ``CarCom'' receives headlights they ordered and find a defect they'll ask for manufacturing data. If ``LightCom'' doesn't provide any data ``CarCom'' can return the whole batch or never order again. Otherwise ``LightCom'' will provide all the data from the database. The company could find out that there's something wrong with the whole batch, or simply that there was one error. If ``LightCom'' finds an error they'll follow the chain of suppliers to get a refund for a broken product. Each part of the supply chain doesn't have to trust the other one. Data can be altered before sending to avoid paying for defects and blame the other part of the chain. 
+
+\subsection{Conclusion}
+
+Hyperledger Fabric together with Hyperledger Composer provides a foundation for more than 20 projects in production, 40 more in development \cite{showcase} and very active community. Fabric doesn't require a native cryptocurrency which eliminates useless part of the system for our use case. Fabric is also the first blockchain technology that enables the use of standard programming languages. Code on the blockchain network is asynchronous and support of language like JavaScript with its native support for asynchronous programming make it much easier and faster to develop. Fabric doesn't use PoW based consensus so no energy is wasted on computing hashes.
+
+After experimenting with Hyperledger Fabric where I've been trying to build blockchain network from scratch multiple times for a long period of time I decided to use Hyperledger Composer for bootstrapping Fabric network. 
+Hyperledger Composer makes it faster for business owners and developers to create smart contracts and blockchain applications thanks to it's modelling language. We can use Composer together with Fabric since it provides another level of abstraction and also makes it easier to join with another system thanks to exposed API.
+
+
+\newpage

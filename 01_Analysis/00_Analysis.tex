@@ -1,0 +1,86 @@
+\chapter{Analysis}
+
+Blockchain is a decentralized, distributed database with no central authority and no point of trust \cite{hyperledger_whitepaper} that is used to maintain a continuously growing list of records, called blocks. Blocks are linked and secured using asymmetric cryptography. Each block typically contains a cryptographic hash of the previous block, a timestamp and  data. By design, blockchain is inherently resistant to modification of the data. Once something has been inserted into the block chain, it's almost impossible to delete it. Blockchain is very helpful when you don't have a lot of trust in other people that you might share your database with.
+
+\begin{figure}[H]
+    \begin{left}
+        \begin{minipage}{\linewidth}
+            \begin{left}
+                \shadowimage[width=\textwidth,keepaspectratio]{img/block-chain-genesis-block.png}
+                \caption{Visualisation of blockchain \cite{pixel_privacy}}
+                \label{obr 1.1}
+            \end{left}
+        \end{minipage}
+    \end{left}
+\end{figure}
+
+A hash function is any function that can be used to map data of arbitrary size onto data of a fixed size. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes \cite{wiki_hash}. A hash function $h(M)$ has to have the following properties \cite{paluch_hash}
+
+\begin{center}
+    \begin{itemize}
+        \item For every $M$, it is easy to calculate $h(M)$
+        \item For every $h$, it is hard to find a message $M$ with $h=h(M)$
+        \item For every $M$, it is hard to find such $M^\prime,M$ \neq $M^\prime$ such that $h(M) = h(M^\prime)$
+        \item It's is hard to find two random messages $M \neq M^\prime$ such that $h(M) =h(M^\prime)$
+    \end{itemize}
+\end{center}
+\newpage
+
+An example of  SHA-256 hashing 
+\begin{center}
+    You will be required to work \emph{twenty four-hour} shifts.
+    \textit{DF88A440213B5A61328F59AB69A568EE2F4BD8D784DA83F963DC16E8800E685A}
+    You will be required to work \emph{twenty-four hour} shifts.
+    \textit{AB78C81B5B1177E2FEC323F08AABA02821C40A1B2688540117D328F89BF1CC80}
+\end{center}
+
+Very similar sentences that only differ in the position of dash produce  different results. The only way to recreate the input data from an ideal cryptographic hash function's output is to attempt a brute-force search of possible inputs to see if they produce a match, or use a rainbow table of matched hashes.\cite{wiki_crypto_hash} A rainbow table is a large database that contains a large number of a hash function’s inputs and corresponding outputs. A rainbow table makes brute forcing a password hash much easier, by removing the most computationally complicated part of a brute force – performing the hash function itself. With all of the values already computed, it’s simplified to just a simple search-and-compare operation on the table.\cite{rainbow_table}
+
+Many companies have become interested in  blockchain and started investing in it heavily. Intel invested thirty million dollars to blockchain focused company in Israel \cite{intel_israel}. Germany-based SAP has also developed a blockchain-as-a-service (BaaS) on the SAP Cloud Platform Blockchain \cite{sap}. All this interest caused a sudden spike of tools that can be used to develop a decentralized application. 
+
+
+\input{01_Analysis/01_History}
+\input{01_Analysis/02_00_Crypto_currency}
+\input{01_Analysis/02_01_Bitcoin.tex}
+\input{01_Analysis/03_Private-Public_blockchain}
+\input{01_Analysis/04_Properties_of_blockchain}
+\input{01_Analysis/05_Time-stamping_schemes}
+\input{01_Analysis/06_Real_world_use}
+\input{01_Analysis/07_Comparison_with_database}
+\input{01_Analysis/08_Existing_platforms}
+\input{01_Analysis/09_Blockchain_usage_in_manufacturing_process}
+
+
+\vspace{10pt}
+
+
+% \begin{table}[hb!]
+%     \centering
+%     \begin{tabular}{| l | l | }
+%     \hline
+%         Jazyk   &   Podiel kódu     \\  \hline
+%         Java    &   46,1\%          \\  \hline
+%         C       &   30,8\%          \\  \hline
+%         C++     &   13,4\%          \\  \hline
+%         Ostatné &   9,7\%           \\  \hline
+%     \end{tabular}
+%     \caption{Percentuálny podiel jazykov v AOSP}
+%     \label{tab:android_code}
+% \end{table}
+% 
+% 
+% \begin{table}[H]
+% \centering
+% \caption{REST komunikácia}
+% \label{REST komun}
+% \begin{tabular}{|l|l|l|}
+% \hline
+% \textit{URL/Http Metóda}             & \multicolumn{1}{c|}{\textit{\textbf{GET}}} & \multicolumn{1}{c|}{\textit{\textbf{PUT}}} \\ \hline
+% \textit{\textbf{uniza.sk/student}}   & Vráti kolekciu študentov                   & Nahradí kolekciu novou                     \\ \hline
+% \textit{\textbf{uniza.sk/student/1}} & Zobrazí informácie o študentovi s id 1     & Nahradí staré údaje novými                 \\ \hline
+% \textit{URL/Http Metóda}             & \multicolumn{1}{c|}{\textbf{POST}}         & \multicolumn{1}{c|}{\textbf{DELETE}}       \\ \hline
+% \textit{\textbf{uniza.sk/student/1}} & Vytvorí novú položku a vráti jej URI       & Vymaže kolekciu                            \\ \hline
+% \textit{\textbf{uniza.sk/student/1}} & Vo všeobecnosti sa nepoužíva.              & Vymaže študenta z kolekcie                 \\ \hline
+% \end{tabular}
+% \end{table}
+
